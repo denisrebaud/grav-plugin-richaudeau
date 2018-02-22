@@ -1,0 +1,115 @@
+en:
+  PLUGIN_RICHAUDEAU:
+    READABILITY:
+      TITLE: Text Readability
+      ENABLE: Enhance the readability
+      ENABLE_HELP: If "No", rules are not applied (page unchanged).
+      TAGS: HTML Tags
+      TAGS_HELP: 'One or several HTML tag separated by a comma. Example: p,li,td'
+      WEIGHT: Font Weight
+      WEIGHT_HELP: 'Font weight applied to the first character of a sentence (see the css font-weight property values). Example: 700'
+      PUNCTUATION: Punctuation with a space
+      PUNCTUATION_HELP: 'One or several characters. Example: .:;'
+      PUNCTUATION_WHITHOUT_SPACE: Punctuation whithout extra space
+      PUNCTUATION_WHITHOUT_SPACE_HELP: 'No extra space will be added after these characters. Example: ([{'
+      NO_SPACE_ALLOWED: 'No space allowed'
+    TYPOGRAPHY:
+      TITLE: Typography
+      ENABLE: Enhance typography
+      ENABLE_HELP: If "No", rules are not applied (page unchanged).
+      ​TAGS_TO_IGNORE: Tags to ignore
+      ​TAGS_TO_IGNORE_HELP: 'HTML tags to ignore, delimited by a comma. Example: li,td'
+      CLASSES_TO_IGNORE: Classes to ignore
+      ​CLASSES_TO_IGNORE_HELP: 'Classes to ignore, delimited by a comma. Example: container,navbar'
+      IDS_TO_IGNORE: IDs to ignore
+      ​IDS_TO_IGNORE_HELP: 'IDs to ignore, delimited by a comma. Example: container,navbar'
+      HYPHENATION: Hyphenation
+      HYPHENATION_HELP: 'Active the hyphenation function (where words are splitted at the end of a line)'
+      ​MIN_LENGTH_HYPHENATION: Min­i­mum word length for the hyphen­ation
+      ​MIN_LENGTH_HYPHENATION_HELP: 'Min­i­mum word length for the hyphen­ation func­tion­al­ity. Example: 5'
+      ​MIN_BEFORE_HYPHENATION: Min­i­mum char­ac­ters before the first hyphen­ation point
+      ​MIN_BEFORE_HYPHENATION_HELP: 'Min­i­mum num­ber of char­ac­ters between the begin­ning of a word and the first hyphen­ation point for the hyphen­ation func­tion­al­ity. Example: 5'
+      ​MIN_AFTER_HYPHENATION: Min­i­mum char­ac­ters after the hyphen­ation point
+      ​MIN_AFTER_HYPHENATION_HELP: 'Min­i­mum num­ber of char­ac­ters between the last hyphen­ation point and the end of a word for the hyphen­ation func­tion­al­ity. Example: 5'
+      HYPHENATE_HEADINGS: Hyphenate headings
+      HYPHENATE_HEADINGS_HELP: 'Active the hyphenation function for headings'
+      HYPHENATE_TITLE_CASE: Hyphen­ation of cap­i­tal­ized (title case) words
+      HYPHENATE_TITLE_CASE_HELP: 'Active hyphen­ation of cap­i­tal­ized (title case) words for the hyphen­ation func­tion­al­ity'
+      HYPHENATE_ALL_CAPS: Hyphen­ation of words con­sist­ing of all cap­i­tal let­ters
+      HYPHENATE_ALL_CAPS_HELP: 'Active hyphen­ation of words con­sist­ing of all cap­i­tal let­ters for the hyphen­ation func­tion­al­ity'
+      HYPHENATION_EXCEPTIONS: Hyphenation Exceptions
+      HYPHENATION_EXCEPTIONS_HELP: "Each excep­tion should be the cor­rect spelling of the tar­geted word with a hard-​​hyphen (minus sign) inserted at each allow­able hyphen­ation point. Use comma as delimiter.  Example : permu-ta-tion,clas-sic"
+      FRACTION_SPACING: Fraction Spacing
+      FRACTION_SPACING_HELP: 'Keep inte­gers and trail­ing frac­tions together on the same line by insert­ing a non-​​breaking space between them.'
+      UNIT_SPACING: Unit Spacing
+      UNIT_SPACING_HELP: 'Keep numeric val­ues and trail­ing units on the same line by insert­ing a non-​​breaking space between them.'
+      UNITS: Unit
+      UNITS_HELP: 'Works in con­junc­tion with the Unit Spacing parameter, which already looks for a vast set of units. This field can be used to fill in any holes. Example: m²,kV,mA'
+      DASH_SPACING: Dash Spacing
+      DASH_SPACING_HELP: 'Force thin-​​spaces between em or en dashes and adjoin­ing letters.'
+      SINGLE_CHARACTER_WORD_SPACING: Single character word spacing
+      SINGLE_CHARACTER_WORD_SPACING_HELP: 'Force force sin­gle char­ac­ter words to wrap to new line (unless they are wid­ows).'
+      SPACE_COLLAPSE: Col­lapse adja­cent spac­ing
+      SPACE_COLLAPSE_HELP: 'Col­lapse adja­cent spac­ing to a sin­gle char­ac­ter. Nor­mal HTML pro­cess­ing col­lapses basic spaces. This option will addi­tion­ally col­lapse no-break spaces, zero-width spaces, fig­ure spaces, etc.'
+      DEWIDOW: Pro­tect wid­ows
+      DEWIDOW_HELP: "Pro­tect wid­ows. Wid­ows are the last word in a block level text that falls to it’s own line.  Wid­ows get lonely when they are all alone.  Wid­ows are kept com­pany by the injec­tion of a non-breaking space between them and the pre­vi­ous word (caus­ing both words to drop to the next line together)."
+      MAX_DEWIDOW_LENGTH: Max­i­mum word length of wid­ows
+      MAX_DEWIDOW_LENGTH_HELP: "Sets the max­i­mum word length of wid­ows who will be pro­tected. Some wid­ows are long enough, they can keep them­selves company."
+
+fr:
+  PLUGIN_RICHAUDEAU:
+    READABILITY:
+      TITLE: Lisibilité du texte
+      ENABLE: Appliquer les recommandations de&nbsp;François&nbsp;Richaudeau
+      ENABLE_HELP: Si activé, mise en gras des débuts de phrase + espaces entre phrases.
+      TAGS: Balises HTML
+      TAGS_HELP: 'Une ou plusieurs balises séparées par une virgule. Example: p,li,td'
+      WEIGHT: Épaisseur des capitales
+      WEIGHT_HELP: "Valeur de la propriété font-weight appliquée à la lettre capitale d'une phrase. Exemple : 700"
+      PUNCTUATION: Signes de ponctuation suivis d'une espace
+      PUNCTUATION_HELP: 'Une espace supplémentaire sera ajoutée avec ces caractères. Exemple : .:;'
+      PUNCTUATION_WHITHOUT_SPACE: Signes de ponctuation sans espace
+      PUNCTUATION_WHITHOUT_SPACE_HELP: 'Aucune espace ne sera ajoutée après ces caractères. Example: ([{'
+      NO_SPACE_ALLOWED: 'Les espaces sont interdites ici'
+    TYPOGRAPHY:
+      TITLE: Typographie
+      ENABLE: Améliorer la typographie
+      ENABLE_HELP: Si "Non", les règles ne seront pas appliquées (page inchangée).
+      ​TAGS_TO_IGNORE: Balises HTML à ignorer
+      ​TAGS_TO_IGNORE_HELP: 'Balises HTLM contenant du texte à laisser intact, séparées par une virgule. Exemple : li,td'
+      CLASSES_TO_IGNORE: Classes à ignorer
+      ​CLASSES_TO_IGNORE_HELP: 'Classes de balises HTLM contenant du texte à laisser intact, séparées par une virgule. Exemple : container,navbar'
+      IDS_TO​_IGNORE: IDs à ignorer
+      IDS_TO_IGNORE_HELP: 'ID de balises HTLM contenant du texte à laisser intact, séparées par une virgule. Exemple : container,navbar'
+      HYPHENATION: Césure des mots
+      HYPHENATION_HELP: "Active la fonction de césure des mots, c'est-à-dire l'endroit où les mots seront coupés en fin de ligne"
+      ​MIN_LENGTH_HYPHENATION: Longueur minimale des mots césurables
+      ​MIN_LENGTH_HYPHENATION_HELP: 'Taille des mots, en caractères, en dessous de laquelle ceux-ci ne sont pas césurés. Exemple : 5'
+      ​MIN_BEFORE_HYPHENATION: Nombre de caractères mini. avant la césure
+      ​MIN_​BEFORE_HYPHENATION_HELP: "Nombre minimal de caractères entre le début d'un mot et le premier point de césure. Exemple : 5"
+      ​MIN_AFTER_HYPHENATION: Nombre de caractères mini. après la césure
+      ​MIN_AFTER_HYPHENATION_HELP: "Nombre minimal de caractères entre le point de césure et la fin d'un mot. Exemple : 4"
+      HYPHENATE_HEADINGS: Césure des mots dans les titres
+      HYPHENATE_HEADINGS_HELP: 'Active la fonction de césure des mots dans les titres'
+      HYPHENATE_TITLE_CASE: Césure des mots débutant par une capitale
+      HYPHENATE_TITLE_CASE_HELP: 'Active la fonction de césure des mots débutant par une capitale (ex. nom propre)'
+      HYPHENATE_ALL_CAPS: Césure des mots écrits en majuscule
+      HYPHENATE_ALL_CAPS_HELP: 'Active la fonction de césure des mots comportant uniquement des majuscules (ex. acronyme)'
+      HYPHENATION_EXCEPTIONS: Césure(s) manuelle(s)
+      HYPHENATION_EXCEPTIONS_HELP: "Placer dans chaque mot, séparée par une virgule, un signe \"moins\" aux points de césure possibles. Exemple : permu-ta-tion,clas-sique"
+      FRACTION_SPACING: Fractions insécables
+      FRACTION_SPACING_HELP: 'Garde les entiers et les fractions sur la même ligne en insérant une espace insécable entre eux.'
+      UNIT_SPACING: Unités insécables
+      UNIT_SPACING_HELP: 'Garde les nombres et les unités sur la même ligne en insérant une espace insécable entre eux.'
+      UNITS: Unités
+      UNITS_HELP: "Fonctionne en conjonction avec le réglage \"Unités insécables\", qui gère déjà un grand nombre d'unités. Ce champ peut être utilisé pour en ajouter de nouvelles. Exemple : m²,kWh,mA,kΩ"
+      DASH_SPACING: Espaces fines autour des tirets
+      DASH_SPACING_HELP: 'Force des espaces fines entre des tirets cadratins ou demi-cadratins et les lettres adjacentes.'
+      SINGLE_CHARACTER_WORD_SPACING: Espacement des mots composés d'une seule lettre
+      SINGLE_CHARACTER_WORD_SPACING_HELP: "Force les mots composés d'une seule lettre (par exemple \"à\") à passer à la ligne suivante"
+      SPACE_COLLAPSE: "Fusionner les espaces adjacentes"
+      SPACE_COLLAPSE_HELP: "Réduire l'espace adjacent à un seul caractère. Le traitement HTML normal fusionne les espaces de base. Cette option va également fusionner les espaces sans interruption, les espaces à largeur nulle, les espaces de figure, etc."
+      DEWIDOW: Protéger les veuves
+      DEWIDOW_HELP: "Protéger les veuves. Les veuves sont le dernier mot dans un texte de niveau bloc qui correspond à sa propre ligne. Pour éviter ce phénomène, une espace insécable est insérée après le mot précédent pour qu'ils soient ensemble à la ligne suivante."
+      MAX_DEWIDOW_LENGTH: Nombre maximal de mots formant des veuves
+      MAX_DEWIDOW_LENGTH_HELP: "Définit le nombre maximal de mots à protéger pour éviter les veuves. Certaines veuves sont assez longues, elles peuvent se garder en compagnie."

@@ -1,0 +1,54 @@
+enabled: true
+readability:
+  enable: true
+  tags: "p,li,td"
+  weight: 700
+  punctuation_with_extra_space: ".:;…"
+  punctuation_without_extra_space: "([{"
+typography:
+  enable: true
+  ​tags_to_ignore:
+  ​classes_to_ignore:
+  ​ids_to_ignore:
+  ​hyphenation: true
+  ​hyphenation_language:
+  ​min_length_hyphenation:
+  ​min_before_hyphenation:
+  ​min_after_hyphenation:
+  ​hyphenate_headings:
+  ​hyphenate_title_case:
+  ​hyphenate_all_caps:
+  ​hyphenation_exceptions:
+  ​fraction_spacing:
+  ​unit_spacing:
+  ​units:
+  ​dash_spacing:
+  ​single_character_word_spacing:
+  ​​space_collapse:
+  ​dewidow:
+  ​max_dewidow_length:
+  ​max_dewidow_pull:
+  ​wrap_hard_hyphens:
+  ​email_wrap:
+  ​url_wrap:
+  ​min_after_url_wrap:
+  ​smart_quotes:
+  ​​smart_quotes_primary:
+  ​​smart_quotes_secondary:
+  ​smart_quotes_language:
+  ​smart_dashes:
+  ​smart_ellipses:
+  ​smart_diacritics:
+  ​​diacritic_language:
+  ​​diacritic_custom_replacements:
+  ​smart_marks:
+  ​smart_math:
+  ​smart_exponents:
+  ​smart_fractions:
+  ​smart_multiplication:
+  ​smart_ordinal_suffix:
+  ​style_ampersands:
+  ​style_caps:
+  ​style_numbers:
+  ​style_initial_quotes:
+  ​initial_quote_tags:

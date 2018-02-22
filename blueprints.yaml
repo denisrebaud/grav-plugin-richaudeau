@@ -1,0 +1,235 @@
+name: Richaudeau
+version: 0.1.0
+description: Modify text according to Richaudeau's advises to enhance the readibility of a text and adds some typography corrections.
+icon: pencil
+author:
+  name: Denis Rebaud
+  email: denis@rebaud.fr
+homepage: https://github.com/denisrebaud/grav-plugin-richaudeau
+demo: https://denis.rebaud.fr
+keywords: grav, plugin, etc
+bugs: https://github.com/denisrebaud/grav-plugin-richaudeau/issues
+docs: https://github.com/denisrebaud/grav-plugin-richaudeau/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        readability:
+          type: tab
+          title: PLUGIN_RICHAUDEAU.READABILITY.TITLE
+          fields:
+            readability.enable:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.READABILITY.ENABLE
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.READABILITY.ENABLE_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            readability.tags:
+              type: text
+              label: PLUGIN_RICHAUDEAU.READABILITY.TAGS
+              help: PLUGIN_RICHAUDEAU.READABILITY.TAGS_HELP
+              validate:
+                type: commalist
+                required: true
+            readability.weight:
+              type: integer
+              label: PLUGIN_RICHAUDEAU.READABILITY.WEIGHT
+              help: PLUGIN_RICHAUDEAU.READABILITY.WEIGHT_HELP
+              validate:
+                type: integer
+                required: true
+                min: 500
+                pattern: '^[5-9]OO$'
+            readability.punctuation_with_extra_space:
+              type: text
+              label: PLUGIN_RICHAUDEAU.READABILITY.PUNCTUATION
+              help: PLUGIN_RICHAUDEAU.READABILITY.PUNCTUATION_HELP
+              validate:
+                pattern: '^[^\s]*$'
+                message: PLUGIN_RICHAUDEAU.READABILITY.NO_SPACE_ALLOWED
+            readability.punctuation_without_extra_space:
+              type: text
+              label: PLUGIN_RICHAUDEAU.READABILITY.PUNCTUATION_WHITHOUT_SPACE
+              help: PLUGIN_RICHAUDEAU.READABILITY.PUNCTUATION_WHITHOUT_SPACE_HELP
+              validate:
+                pattern: '^[^\s]*$'
+                message: PLUGIN_RICHAUDEAU.READABILITY.NO_SPACE_ALLOWED
+        typography:
+          type: tab
+          title: PLUGIN_RICHAUDEAU.TYPOGRAPHY.TITLE
+          fields:
+            typography.enable:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.ENABLE
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.ENABLE_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.​tags_to_ignore:
+              type: text
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​TAGS_TO_IGNORE
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​TAGS_TO_IGNORE_HELP
+              validate:
+                type: commalist
+            typography.classes_to_ignore:
+              type: text
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.CLASSES_TO_IGNORE
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​CLASSES_TO_IGNORE_HELP
+              validate:
+                type: commalist
+            typography.ids_to_ignore:
+              type: text
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.IDS_TO_IGNORE
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.IDS_TO_IGNORE_HELP
+              validate:
+                type: commalist
+            typography.hyphenation:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATION
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATION_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.​min_length_hyphenation:
+              type: integer
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​MIN_LENGTH_HYPHENATION
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​MIN_LENGTH_HYPHENATION_HELP
+            typography.​min_before_hyphenation:
+              type: integer
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​MIN_BEFORE_HYPHENATION
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.​MIN_BEFORE_HYPHENATION_HELP
+            typography.hyphenate_headings:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATE_HEADINGS
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATE_HEADINGS_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.hyphenate_title_case:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATE_TITLE_CASE
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATE_TITLE_CASE_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.hyphenate_all_caps:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATE_ALL_CAPS
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATE_ALL_CAPS_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.hyphenation_exceptions:
+              type: text
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATION_EXCEPTIONS
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.HYPHENATION_EXCEPTIONS_HELP
+              validate:
+                type: commalist
+            typography.fraction_spacing:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.FRACTION_SPACING
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.FRACTION_SPACING_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.unit_spacing:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.UNIT_SPACING
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.UNIT_SPACING_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.units:
+              type: text
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.UNITS
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.UNITS_HELP
+              validate:
+                type: commalist
+            typography.dash_spacing:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.DASH_SPACING
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.DASH_SPACING_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.single_character_word_spacing:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.SINGLE_CHARACTER_WORD_SPACING
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.SINGLE_CHARACTER_WORD_SPACING_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.space_collapse:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.SPACE_COLLAPSE
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.SPACE_COLLAPSE_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.dewidow:
+              type: toggle
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.DEWIDOW
+              highlight: 1
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.DEWIDOW_HELP
+              options:
+                  1: PLUGIN_ADMIN.ENABLED
+                  0: PLUGIN_ADMIN.DISABLED
+              validate:
+                  type: bool
+            typography.max_dewidow_length:
+              type: integer
+              label: PLUGIN_RICHAUDEAU.TYPOGRAPHY.MAX_DEWIDOW_LENGTH
+              help: PLUGIN_RICHAUDEAU.TYPOGRAPHY.MAX_DEWIDOW_LENGTH_HELP
+              validate:
+                type: integer
+                required: true
+                min: 1
