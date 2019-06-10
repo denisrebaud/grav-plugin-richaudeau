@@ -1,6 +1,9 @@
 # grav-plugin-richaudeau
 
-The `richaudeau` Plugin for [Grav CMS](http://github.com/getgrav/grav) modify text according to Richaudeau's advises to enhance the readibility of a text.
+The `richaudeau` Plugin for [Grav CMS](http://github.com/getgrav/grav) modify text according to Richaudeau's advises to enhance the readability of a text:
+
+- Each sentence starts with a bold character,
+- An unbreakable space is added between two sentences.
 
 
 ## Installation
